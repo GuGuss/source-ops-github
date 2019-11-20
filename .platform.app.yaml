@@ -135,4 +135,9 @@ source:
                 composer update
                 git add composer.lock
                 git commit -m "Update Composer dependencies."
-
+        foo:
+            command: |
+                set -e
+                touch foo
+                git add foo
+                git commit -m 'foo'
