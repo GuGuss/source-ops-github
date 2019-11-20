@@ -126,3 +126,13 @@ crons:
     drupal:
         spec: '*/20 * * * *'
         cmd: 'cd web ; drush core-cron'
+
+source:
+    operations:
+        update:
+            command: |
+                set -e
+                composer update
+                git add composer.lock
+                git commit -m "Update Composer dependencies."
+
