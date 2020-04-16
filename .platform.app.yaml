@@ -138,6 +138,6 @@ source:
         foo:
             command: |
                 set -e
-                touch foo
-                git add foo
-                git commit -m 'foo'
+                touch bar
+                git add bar
+                git commit -m 'bar'
